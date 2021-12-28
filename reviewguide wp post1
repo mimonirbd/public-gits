@@ -2,8 +2,8 @@ import base64
 import requests
 
 #Authenticate
-user = 'wpuser1'  # the user in which the auth. token is given
-pythonapp = '2cAq 6OKP LPGg HN9z 8yq2 PiAT'  # paste here your auth. token
+user = 'review'  # the user in which the auth. token is given
+pythonapp = '5ZYY 69Ob hRbh hqWo y6Vh d1eF'  # paste here your auth. token
 url = 'https://reviewguide.org/wp-json/wp/v2'  # the url of the wp access location
 token = base64.standard_b64encode((user + ':' + pythonapp).encode('utf-8'))  # we have to encode the usr and pw
 headers = {'Authorization': 'Basic ' + token.decode('utf-8')}
